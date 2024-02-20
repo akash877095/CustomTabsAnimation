@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="10dp"
+    android:weightSum="6">
+
+    <LinearLayout
+        android:id="@+id/indicatorLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_weight="5.7" />
+
+</LinearLayout>

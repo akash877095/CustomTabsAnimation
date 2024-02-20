@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.mytablayout.utils.HorizontalTabBar
+            android:id="@+id/horizontal_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/tab_layout_back"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_10sdp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fillViewport="true">
+
+            <com.mytablayout.bottombaranimated.SmoothBottomBar
+                android:id="@+id/bottomBar"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                app:activeItem="0"
+                app:backgroundColor="#f1e3da"
+                app:cornerRadius="@dimen/_25sdp"
+                app:corners="all"
+                app:duration="1000"
+                app:indicatorColor="@color/white"
+                app:indicatorRadius="@dimen/_20sdp"
+                app:itemPadding="@dimen/_20sdp"
+                app:menu="@menu/item_menu"
+                app:sideMargins="@dimen/_10sdp"
+                app:textColor="@color/black" />
+
+        </HorizontalScrollView>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/tab_layout_back"
+            android:paddingHorizontal="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            app:tabGravity="fill"
+            app:tabIndicator="@drawable/tab_indicator_back"
+            app:tabIndicatorAnimationDuration="1000"
+            app:tabIndicatorAnimationMode="linear"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorGravity="center"
+            app:tabIndicatorHeight="@dimen/_40sdp"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="@dimen/_25sdp"
+            app:tabPaddingStart="@dimen/_25sdp"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="@color/black" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/tab_layout_back"
+            android:paddingHorizontal="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            app:tabGravity="fill"
+            app:tabIndicator="@drawable/tab_indicator_red_back"
+            app:tabIndicatorAnimationDuration="1000"
+            app:tabIndicatorAnimationMode="linear"
+            app:tabIndicatorColor="@color/pigment_red"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorGravity="center"
+            app:tabIndicatorHeight="@dimen/_40sdp"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="@dimen/_25sdp"
+            app:tabPaddingStart="@dimen/_25sdp"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="@color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

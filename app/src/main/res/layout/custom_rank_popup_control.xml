@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/_10sdp">
+
+    <LinearLayout
+        android:id="@+id/llRankPopupRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.mytablayout.controls.verticalviewpager.CustomRankVerticalPagerControl
+            android:id="@+id/vvCustomViewPagerControl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_left_round" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="7dp"
+            android:visibility="gone"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:id="@+id/indicatorLayout"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="5.9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clExpertDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/expert_back"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/ivExpert"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/expert"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="Expert"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/ivExpert"
+                    app:layout_constraintTop_toTopOf="@+id/ivExpert" />
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/linearProgressIndicator"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:progress="70"
+                    app:indicatorColor="@color/progress_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvTitle"
+                    app:layout_constraintTop_toTopOf="@+id/tvTitle"
+                    app:trackColor="@color/primary_black"
+                    app:trackCornerRadius="@dimen/_8sdp" />
+
+                <TextView
+                    android:id="@+id/tvRankDesp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2,349 xp to next rank"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivExpert"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clMissionView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mission_back_below_round"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_7sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clExpertDetail">
+
+                <TextView
+                    android:id="@+id/tvMissionText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="8 Missions available today"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/oval_white_21"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/right_white_arrow"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

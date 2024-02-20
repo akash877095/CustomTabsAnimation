@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="warm_grey_two">#898989</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black_an_shade">#221E20</color>
+    <color name="black_shade">#F4F4F4</color>
+    <color name="shade_black">#EEEEEE</color>
+    <color name="tab_unselected_text_color">#FF000000</color>
+    <color name="growthbg">#E5E9F1</color>
+    <color name="growthbg30">#4DE5E9F1</color>
+    <color name="tab_background_color">#4DE5E9F1</color>
+    <color name="cyan">#2CD5C4</color>
+    <color name="transparentfull">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="tab_selected_text_color">#FFFFFF</color>
+    <color name="white70">#B3FFFFFF</color>
+    <color name="red">#c1272d</color>
+    <color name="hawkis_blue">#D8E0F0</color>
+    <color name="pigment_red">#ED1C24</color>
+    <color name="primary_black">#EBEAEA</color>
+    <color name="light_blue">#7D83F7</color>
+    <color name="progress_color">#5DAFE1</color>
+    <color name="pigment_redop15">#26ED1C24</color>
+    <color name="pigment_red50">#80ED1C24</color>
+    <color name="pigment_red20op">#33ED1C24</color>
+
+    <color name="white_smoke">#f1f1f1</color>
+    <color name="llgray">#757678</color>
+    <color name="gray44">#707070</color>
+
+    <color name="silver">#C0C0C0</color>
+    <color name="progress_bar_color">#8a9b0f</color>
+
+    <color name="loader_defalut">#44ffffff</color>
+    <color name="loader_selected">#ffffff</color>
+
+    <color name="active_indicator_color">#FF0000</color>
+    <color name="inactive_indicator_color">#808080</color>
+
+</resources>

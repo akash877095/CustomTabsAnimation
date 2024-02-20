@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyTabLayout</string>
+    <string name="ellipsis">"\n "</string>
+</resources>
